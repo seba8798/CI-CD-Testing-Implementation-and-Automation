@@ -25,5 +25,18 @@ jobs:
     - name: Build
       run: dotnet build --no-restore --configuration Release
 
-    - name: Test
-      run: dotnet test --no-build --configuration Release --collect:"XPlat Code Coverage"
+    - name: Run Unit Tests
+      run: dotnet test MainApp.Logic.Tests/MainApp.Logic.Tests.csproj --no-build --configuration Release --collect:"XPlat Code Coverage"
+
+    - name: Run Integration Tests
+      run: dotnet test MainApp.IntegrationTests/MainApp.IntegrationTests.csproj --no-build --configuration Release
+
+    - name: Run E2E Tests
+      run: dotnet test MainApp.E2ETests/MainApp.E2ETests.csproj --no-build --configuration Release
+
+    - name: Upload Test Results
+      if: always()
+      uses: actions/upload-artifact@v4
+      with:
+        name: test-results
+        path: '**/TestResults/*.xml'
