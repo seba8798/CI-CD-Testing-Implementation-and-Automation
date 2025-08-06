@@ -3,7 +3,7 @@ using MainApp.Logic;
 
 namespace MainApp.Logic.Tests;
 
-public class Class3Tests
+public class Class1Tests
 {
     [Fact]
     public void Add_ReturnsCorrectSumNew()
