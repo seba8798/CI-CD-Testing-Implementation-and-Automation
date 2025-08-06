@@ -2,9 +2,9 @@ name: .NET CI
 
 on:
   push:
-    branches: [ "test-CICD" ]
+    branches: [ "master", "test-CICD","unit-fail" ]
   pull_request:
-    branches: [ "test-CICD" ]
+    branches: [ "master", "test-CICD","unit-fail" ]
 
 jobs:
   build-and-test:
