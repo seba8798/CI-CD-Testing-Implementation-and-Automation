@@ -33,7 +33,8 @@ jobs:
       run: dotnet test MainApp.E2ETests/MainApp.E2ETests.csproj --no-build --configuration Release --logger:"trx"
 
     - name: The demo step has failed
-      if: ${{ failure() && jobs.demo.conclusion == 'failure' }}
+
+      if: ${{ failure() && steps.demo.conclusion == 'failure' || jobs.steps.demo.conclusion == 'failure'}}
       run: echo "The demo step has failed. Please check the logs for details."
 
     - name: Upload Test Results
