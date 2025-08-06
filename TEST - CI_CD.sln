@@ -9,6 +9,38 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MainApp.Logic", "MainApp.Lo
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MainApp.Logic.Tests", "MainApp.Logic.Tests\MainApp.Logic.Tests.csproj", "{8E2C5CCE-9E0C-408A-861E-4CA97D0485A7}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MainApp.E2ETests", "MainApp.E2ETests\MainApp.E2ETests.csproj", "{C02228E4-BF99-8A88-50B5-A3CA2298062C}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = ".git", ".git", "{02EA681E-C7D8-13C7-8484-4AC65E1B71E8}"
+	ProjectSection(SolutionItems) = preProject
+		.git\.COMMIT_EDITMSG.swp = .git\.COMMIT_EDITMSG.swp
+		.git\COMMIT_EDITMSG = .git\COMMIT_EDITMSG
+		.git\config = .git\config
+		.git\description = .git\description
+		.git\FETCH_HEAD = .git\FETCH_HEAD
+		.git\HEAD = .git\HEAD
+		.git\index = .git\index
+		.git\ms-persist.xml = .git\ms-persist.xml
+		.git\ORIG_HEAD = .git\ORIG_HEAD
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "hooks", "hooks", "{FB43123E-A324-499F-AE4D-7897F7FC2B66}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "info", "info", "{F712848D-6337-4758-859F-932ED8379178}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "logs", "logs", "{FF091811-DE45-44AF-BA71-E6C21C85BA13}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "objects", "objects", "{6986A64C-463A-4B95-BD72-DED7FA75D797}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "refs", "refs", "{AECB952D-186A-40E2-82D7-33D39F8D7CD7}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = ".github", ".github", "{14886FB3-8577-487E-85B4-5F35518CC202}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "workflows", "workflows", "{58D79D32-6671-4C34-AAD3-459F5BAE89CA}"
+	ProjectSection(SolutionItems) = preProject
+		.github\workflows\dotnet.yml = .github\workflows\dotnet.yml
+	EndProjectSection
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -55,9 +87,29 @@ Global
 		{8E2C5CCE-9E0C-408A-861E-4CA97D0485A7}.Release|x64.Build.0 = Release|Any CPU
 		{8E2C5CCE-9E0C-408A-861E-4CA97D0485A7}.Release|x86.ActiveCfg = Release|Any CPU
 		{8E2C5CCE-9E0C-408A-861E-4CA97D0485A7}.Release|x86.Build.0 = Release|Any CPU
+		{C02228E4-BF99-8A88-50B5-A3CA2298062C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C02228E4-BF99-8A88-50B5-A3CA2298062C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C02228E4-BF99-8A88-50B5-A3CA2298062C}.Debug|x64.ActiveCfg = Debug|Any CPU
+		{C02228E4-BF99-8A88-50B5-A3CA2298062C}.Debug|x64.Build.0 = Debug|Any CPU
+		{C02228E4-BF99-8A88-50B5-A3CA2298062C}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{C02228E4-BF99-8A88-50B5-A3CA2298062C}.Debug|x86.Build.0 = Debug|Any CPU
+		{C02228E4-BF99-8A88-50B5-A3CA2298062C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C02228E4-BF99-8A88-50B5-A3CA2298062C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C02228E4-BF99-8A88-50B5-A3CA2298062C}.Release|x64.ActiveCfg = Release|Any CPU
+		{C02228E4-BF99-8A88-50B5-A3CA2298062C}.Release|x64.Build.0 = Release|Any CPU
+		{C02228E4-BF99-8A88-50B5-A3CA2298062C}.Release|x86.ActiveCfg = Release|Any CPU
+		{C02228E4-BF99-8A88-50B5-A3CA2298062C}.Release|x86.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{FB43123E-A324-499F-AE4D-7897F7FC2B66} = {02EA681E-C7D8-13C7-8484-4AC65E1B71E8}
+		{F712848D-6337-4758-859F-932ED8379178} = {02EA681E-C7D8-13C7-8484-4AC65E1B71E8}
+		{FF091811-DE45-44AF-BA71-E6C21C85BA13} = {02EA681E-C7D8-13C7-8484-4AC65E1B71E8}
+		{6986A64C-463A-4B95-BD72-DED7FA75D797} = {02EA681E-C7D8-13C7-8484-4AC65E1B71E8}
+		{AECB952D-186A-40E2-82D7-33D39F8D7CD7} = {02EA681E-C7D8-13C7-8484-4AC65E1B71E8}
+		{58D79D32-6671-4C34-AAD3-459F5BAE89CA} = {14886FB3-8577-487E-85B4-5F35518CC202}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {E685441A-3A8B-450B-9A28-0EFAE9F8A0EB}
