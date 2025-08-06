@@ -11,8 +11,8 @@ public class Class1Tests
         // Arrange
         var logic = new Class1();
         // Act
-        var result = logic.Add(1, 3);
+        var result = logic.Add(1, 4);
         // Assert
-        Assert.Equal(4, result);
+        Assert.Equal(5, result);
     }
 }
